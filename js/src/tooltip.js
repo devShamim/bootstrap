@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------------
  */
 
-import * as Popper from '@popperjs/core'
+import * as Popper from 'popperjs/core'
 import { defineJQueryPlugin, execute, findShadowRoot, getElement, getUID, isRTL, noop } from './util/index.js'
 import { DefaultAllowlist } from './util/sanitizer.js'
 import EventHandler from './dom/event-handler.js'

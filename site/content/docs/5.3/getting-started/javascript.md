@@ -43,13 +43,13 @@ Compared to JS bundlers, using ESM in the browser requires you to use the full p
 
 <!-- eslint-skip -->
 ```js
-import * as Popper from "@popperjs/core"
+import * as Popper from "popperjs/core"
 ```
 
 If you try this as-is, you'll see an error in the console like the following:
 
 ```text
-Uncaught TypeError: Failed to resolve module specifier "@popperjs/core". Relative references must start with either "/", "./", or "../".
+Uncaught TypeError: Failed to resolve module specifier "popperjs/core". Relative references must start with either "/", "./", or "../".
 ```
 
 To fix this, you can use an `importmap` to resolve the arbitrary module names to complete paths. If your [targeted browsers](https://caniuse.com/?search=importmap) do not support `importmap`, you'll need to use the [es-module-shims](https://github.com/guybedford/es-module-shims) project. Here's how it works for Bootstrap and Popper:
@@ -71,7 +71,7 @@ To fix this, you can use an `importmap` to resolve the arbitrary module names to
     <script type="importmap">
     {
       "imports": {
-        "@popperjs/core": "{{< param "cdn.popper_esm" >}}",
+        "popperjs/core": "{{< param "cdn.popper_esm" >}}",
         "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@{{< param "current_version" >}}/dist/js/bootstrap.esm.min.js"
       }
     }
