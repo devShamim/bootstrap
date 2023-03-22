@@ -49,7 +49,7 @@ import * as Popper from "popperjs/core"
 If you try this as-is, you'll see an error in the console like the following:
 
 ```text
-Uncaught TypeError: Failed to resolve module specifier "popperjs/core". Relative references must start with either "/", "./", or "../".
+Uncaught TypeError: Failed to resolve module specifier "popperjs". Relative references must start with either "/", "./", or "../".
 ```
 
 To fix this, you can use an `importmap` to resolve the arbitrary module names to complete paths. If your [targeted browsers](https://caniuse.com/?search=importmap) do not support `importmap`, you'll need to use the [es-module-shims](https://github.com/guybedford/es-module-shims) project. Here's how it works for Bootstrap and Popper:

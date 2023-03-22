@@ -100,13 +100,13 @@
     "watch-js-docs": "nodemon --watch site/assets/js/ --ext js --exec \"npm run js-lint\""
   },
   "peerDependencies": {
-    "popperjs/core": "git+https://github.com/devShamim/popperjs-core.git"
+    "popperjs": "git+https://github.com/devShamim/popperjs-core.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
-    "popperjs/core": "git+https://github.com/devShamim/popperjs-core.git",
+    "popperjs": "git+https://github.com/devShamim/popperjs-core.git",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
@@ -172,13 +172,13 @@
     "shim": {
       "js/bootstrap": {
         "deps": [
-          "popperjs/core"
+          "popperjs"
         ]
       }
     },
     "dependencies": {},
     "peerDependencies": {
-      "popperjs/core": "git+https://github.com/devShamim/popperjs-core.git"
+      "popperjs": "git+https://github.com/devShamim/popperjs-core.git"
     }
   }
 }

@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------------
  */
 
-import * as Popper from 'popperjs/core'
+import * as Popper from 'popperjs'
 import {
   defineJQueryPlugin,
   execute,
